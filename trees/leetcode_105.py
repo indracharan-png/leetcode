@@ -36,4 +36,7 @@ class Solution:
 
         return makeTree(preorder, 0, n - 1, inorder, 0, n - 1)
 
+    # Time-complexity: O(n): building dict + O(n): processing each node in makeTree function = O(n)
+    # Space-complexity: O(n): for the dict + O(h): Recursion stack call space, h = height of tree = O(n)
+
           
