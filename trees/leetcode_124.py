@@ -32,7 +32,8 @@ class Solution:
             
             max_val = max(max_val, 0)
 
-            output = max(output, root.val + max(left_val, 0) + max(right_val, 0)) # Update the output
+            # Update the output (the path could go starting some where in left subtree upto the root and then strech into some node in right sub tree)
+            output = max(output, root.val + max(left_val, 0) + max(right_val, 0)) 
 
             return root.val + max_val
 
